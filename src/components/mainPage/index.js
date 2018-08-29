@@ -161,52 +161,6 @@ class MainPage extends React.Component {
             </a>
           </div>
         </div>
-        <div className="flex items-center pl3 pb2">
-          <a
-            href="#rescueNeeded"
-            onClick={this.filterRescue}
-            className={
-              !this.state.needsRescue
-                ? "link red ba pa2 mr2 br2"
-                : "link bg-red white pa2 mr2 br2"
-            }
-          >
-            Rescue needed
-          </a>
-          <a
-            href="#showShelters"
-            onClick={this.shelterGroup}
-            className={
-              !this.state.shelters
-                ? "link blue ba pa2 mr2 br2"
-                : "link bg-blue white pa2 mr2 br2"
-            }
-          >
-            Shelters
-          </a>
-          <a
-            href="#showOthers"
-            onClick={this.othersGroup}
-            className={
-              !this.state.others
-                ? "link green ba pa2 mr2 br2"
-                : "link bg-green white pa2 mr2 br2"
-            }
-          >
-            Request Made For Other
-          </a>
-          <a
-            href="#showAll"
-            onClick={this.allReqGroup}
-            className={
-              !this.state.allReq
-                ? "link black ba pa2 mr2 br2"
-                : "link bg-black white pa2 mr2 br2"
-            }
-          >
-            All Request
-          </a>
-        </div>
         <MainPageMap
           position={this.state.position || [10, 76]}
           zoomLevel={this.state.position ? 13 : 7}
