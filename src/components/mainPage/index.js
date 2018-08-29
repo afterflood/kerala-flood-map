@@ -130,7 +130,7 @@ class MainPage extends React.Component {
     return (
       <div>
         <div className="flex items-center justify-between pl3 pr3">
-          <h3 className="">Kerala Flood Map</h3>
+          <h3 className="">Rebuild Kerala Map</h3>
           <div className="main-nav">
             <a
               href={
